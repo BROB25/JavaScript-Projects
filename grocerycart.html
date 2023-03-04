@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grocery Cart</title>
+  </head>
+  <style>
+    button {
+      margin-bottom: 10px;
+      font-size: 16px;
+      padding: 4px;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+  <body style="font-family: Arial;">
+
+    <button onclick="addToCart('Milk')">Milk</button>
+    <button onclick="addToCart('Bread')">Bread</button>
+    <button onclick="addToCart('Eggs')">Eggs</button>
+    <button onclick="clearCart('Clear')">Clear</button>
+    <div id="cart"></div>
+
+    <script>
+      const cart = document.getElementById('cart');
+
+      function addToCart(food) {
+        const cartItem = document.createElement('div');
+        cartItem.innerText = food;
+        cart.appendChild(cartItem);
+      }
+
+      function clearCart() {
+        cart.innerHTML = '';
+      }
+    </script>
+
+  </body>
+</html>
