@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>cm to inch converter</title>
+  </head>
+  <style>
+    button {
+      background-color: rgb(75, 108, 242);
+      font-weight: 700;
+      margin-bottom: 10px;
+      margin-left: 6px;
+      border: none;
+      padding: 4px;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+  <body>
+    <input id="measurement" />
+    <button onclick="convertToCm()">Convert to cm</button>
+    <button onclick="convertToIn()">Convert to in</button>
+    <script>
+
+      const measurement = document.getElementById('measurement');
+
+      function convertToCm() {
+        const value = measurement.value;
+        const convertedValue = +value * 2.54;
+        const result = document.createElement('div');
+        result.innerText = convertedValue;
+        document.body.appendChild(result);
+      }
+
+      function convertToIn() {
+        const value = measurement.value;
+        const convertedValue = +value / 2.54;
+        const result = document.createElement('div');
+        result.innerText = convertedValue;
+        document.body.appendChild(result);
+      }
+
+    </script>
+  </body>
+</html>
+
