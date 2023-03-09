@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(60, 56, 56);
+  font-family: Arial;
+}
+
+#todo-list div {
+  font-size: 15px;
+  color: rgb(195, 193, 193);
+  margin-top: 10px;
+}
