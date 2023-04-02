@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weatherapp.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather</h1>
+      <div id="geolocation">
+        <button id="geolocation-btn">Current Location</button>
+      </div>
+      <form>
+        <input type="text" id="location-input" placeholder="Enter Location" required />
+        <button type="submit">
+          Get Weather
+        </button>
+      </form>
+      <div id="weather"></div>
+      <div id="loading"></div>
+      <div id="search-history">
+        <h2>Search History</h2>
+        <ul id="search-history-list"></ul>
+      </div>
+    </div>
+    <script src="weatherapp.js"></script>
+  </body>
+</html>

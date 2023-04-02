@@ -1,0 +1,88 @@
+body {
+  background: #eee;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+input[type="text"] {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  margin-right: 1rem;
+}
+
+button[type="submit"],
+button#geolocation-btn {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  background: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+}
+
+button#geolocation-btn {
+  margin-bottom: 1rem;
+}
+
+button[type="submit"]:hover,
+button#geolocation-btn:hover {
+  background: #34495e;
+}
+
+#weather {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+#loading {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#loading img {
+  display: block;
+  margin: 0 auto;
+}
+
+#search-history-list {
+  margin-top: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+#search-history-list li {
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f7f7f7;
+  cursor: pointer;
+}
+
+#search-history-list li:hover {
+  background: #e3e3e3;
+}
